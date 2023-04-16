@@ -1,0 +1,18 @@
+html {
+}
+
+body {
+  font-family: ;
+}
+button {
+  font-family: inherit;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
