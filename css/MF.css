@@ -662,6 +662,10 @@ button {
 }
 /* =====Desctop=====*/
 @media screen and (min-width: 1158px) {
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .customers-conteiner {
     width: 1158px;
   }
