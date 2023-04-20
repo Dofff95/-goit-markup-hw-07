@@ -5,7 +5,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/MF.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +24,7 @@
       <div class="conteiner header-conteiner">
         <nav class="header-nav">
           <a class="link logo" href="./index.html">
-            Web<span class="web-color-header">Studio</span>
+            WEB<span class="web-color-header">STUDIO</span>
           </a>
           <ul class="list site-nav">
             <li class="header-menu">
@@ -39,6 +40,12 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-hamburger-menu" type="button" data-modal-open>
+          <svg class="burger-menu-icon" width="32" height="22">
+                  <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+        </button>
+        
         <address class="address-header">
           <ul class="list header-contacts">
             <li>
@@ -57,11 +64,79 @@
             </li>
           </ul>
         </address>
+       </div>
+
+      <!-- <div class="mobile-menu" style="" data-modal>
+        
+        <div class="conteiner mobile-menu-conteiner" >
+          <div>
+            <button class="button close-mobile-menu " data-modal-close>
+            <svg class="close-mobile-menu-icon" width="8" height="8">
+            <use href="./images/sprite.svg#close-modal"></use>
+            </svg>
+            </button>
+            
+              <nav>
+                <ul class="list nav-mobile-menu">
+                  <li class="nav-mobile-menu-item"><a class="link mobile-menu-link" href="">Studio</a></li>
+                  <li class="nav-mobile-menu-item"><a class="link mobile-menu-link" href="">Portfolio</a></li>
+                  <li class="nav-mobile-menu-item"><a class="link mobile-menu-link" href="">Contacts</a></li>
+                </ul>      
+              </nav>
+           </div>
+           <div>
+            <address>
+            
+              <ul class="list contact-modal-mobile">
+                <li ><a
+                  class="link contacts phone-number-contacts"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                ></li>
+                <li class="mail-item"><a
+                  class="link contacts mail-contacts"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                ></li>
+              </ul>
+            </address>
+            <ul class="list social-mobile-menu">
+              <li class="item item-social-mobile-menu">
+                <a class="link social-mobile-menu-link" href="#">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-mobile-menu">
+                <a class="link social-mobile-menu-link" href="#">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-mobile-menu">
+                <a class="link social-mobile-menu-link" href="#">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-mobile-menu">
+                <a class="link social-mobile-menu-link" href="#">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            </div> -->
+        </div>
       </div>
     </header>
     <!--======================HERO===========================-->
     <main>
-      <section class="hero-section">
+      <section class="hero-section section">
         <div class="conteiner hero-conteiner">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
@@ -72,7 +147,7 @@
 
       <!--=================Advantages======================-->
 
-      <section class="section advantages">
+      <!-- <section class="section advantages-section">
         <div class="conteiner">
           <h2 hidden class="hidden-title">Advantages</h2>
           <ul class="advantages-list list">
@@ -126,11 +201,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--========================WHAT ARE WE GOING==============================-->
 
-      <section class="section what-section">
+      <!-- <section class="section what-section">
         <div class="conteiner">
           <h2 class="what-title title">What are we doing</h2>
           <ul class="what-list list">
@@ -160,20 +235,29 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--============================TEAM==============================-->
 
-      <section class="section team-section">
-        <div class="conteiner">
+      <!-- <section class="section team-section">
+        <div class="conteiner team-conteiner">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="item img-item team-card">
-              <img
+              <picture>
+                <source srcset="./images/desktop-mark.webp 1x, ./images/desktop-mark@2x.webp 2x" media="(min-width: 1158px)" type="image/webp"/>
+                <source srcset="./images/desktop-mark.jpg 1x, ./images/desktop-mark@2x.jpg 2x" media="(min-width: 1158px)" />
+                <source srcset="./images/tablet-mark.webp 1x, ./images/tablet-mark@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/tablet-mark.jpg 1x, ./images/tablet-mark@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile-mark.webp 1x, ./images/mobile-mark@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/mobile-mark.jpg 1x, ./images/mobile-mark@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                <img
                 src="./images/mark.jpg"
                 alt="photo with image Mark Guerrero"
-                width="264"
-              />
+                width="264">
+              </picture>
+              
               <div class="comment-team-card">
                 <h3 class="title">Mark Guerrero</h3>
                 <p class="paragraph">Product Designer</p>
@@ -335,10 +419,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--============================CUSTOMERS==============================-->
 
-      <section class="section customers-section">
+      <!-- <section class="section customers-section">
         <div class="conteiner customers-conteiner">
           <h2 class="title customers-title">Customers</h2>
           <ul class="list list-customers">
@@ -351,42 +435,42 @@
             </li>
             <li class="item item-customers">
               <a class="icon-customers-link" href="#">
-                <svg width="104" height="56">
+                <svg width="110" height="56">
                   <use href="./images/sprite.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="item item-customers">
               <a class="icon-customers-link" href="#">
-                <svg width="104" height="56">
+                <svg width="110" height="56">
                   <use href="./images/sprite.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="item item-customers">
               <a class="icon-customers-link" href="#">
-                <svg width="104" height="56">
+                <svg width="110" height="56">
                   <use href="./images/sprite.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="item item-customers">
               <a class="icon-customers-link" href="#">
-                <svg width="104" height="56">
+                <svg width="110" height="56">
                   <use href="./images/sprite.svg#icon-Logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="item item-customers">
               <a class="icon-customers-link" href="#">
-                <svg width="104" height="56">
+                <svg width="110" height="56">
                   <use href="./images/sprite.svg#icon-Logo-6"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--==================================FOOTER=============================-->
     <footer class="section footer-section">
@@ -447,7 +531,7 @@
     </footer>
 
     <!-- =========================МОДАЛКА=============================== -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
   <button type="button" class="close-modal-btn" data-modal-close>
     <svg class="close-modal-icon">
@@ -519,8 +603,9 @@
     </label>
 
     <button type="submit" class="modal-button-send">Send</button>
-  </form>
+  </form> -->
 </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-  </body>
+</body>
 </html>
