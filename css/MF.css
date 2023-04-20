@@ -398,6 +398,17 @@ button {
     max-width: 320px;
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-bg-hero@2x.jpg);
+  }
+}
 /* =====Tablet=====*/
 @media screen and (min-width: 768px) {
   .hero-section {
@@ -416,6 +427,17 @@ button {
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-bg-hero@2x.jpg);
   }
 }
 
@@ -437,6 +459,17 @@ button {
   }
   .hero-title {
     margin-bottom: 48px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop-bg-hero@2x.jpg);
   }
 }
 /* =================================HERO MODAL=============================== */
