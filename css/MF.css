@@ -144,15 +144,18 @@ button {
     height: 100%;
     background-color: #fff;
 
+    transition: opacity var(--transition);
+  }
+  .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity var(--transition);
   }
   .mobile-menu:is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transition: opacity var(--transition);
   }
   .close-mobile-menu {
     position: absolute;
@@ -262,6 +265,9 @@ button {
     align-items: center;
   }
   .mobile-hamburger-menu {
+    display: none;
+  }
+  .mobile-menu {
     display: none;
   }
   .site-nav {
