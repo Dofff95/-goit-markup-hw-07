@@ -9,7 +9,7 @@ html {
 
 :root {
   --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Relawey", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --accent-color: #404bbf;
   --bgcolor-primary: #e5e5e5;
   --white-color: #ffffff;
@@ -71,6 +71,7 @@ button {
 .link {
   list-style: none;
   text-decoration: none;
+  font-style: normal;
 }
 .title {
   color: var(--primary-color);
@@ -219,7 +220,7 @@ button {
     font-size: 36px;
     line-height: 1.11;
     margin-bottom: 40px;
-    /* color: var(--text-color); */
+    color: var(--web-color);
   }
   .mail-contacts {
     /* color: var(--text-color); */
@@ -229,6 +230,9 @@ button {
   }
   .mail-item {
     margin-top: 40px;
+  }
+  .active-page-menu {
+    color: var(--accent-color);
   }
 
   .social-mobile-menu {
@@ -300,6 +304,16 @@ button {
     border-radius: 2px;
     background-color: var(--accent-color);
   }
+  .contacts {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  .mail-item {
+    font-style: normal;
+  }
 }
 /* =====Desctop=====*/
 @media screen and (min-width: 1158px) {
@@ -314,6 +328,11 @@ button {
   .contacts {
     color: var(--text-color);
     transition: color var(--transition);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
   }
   .contacts:hover,
   .contacts:focus {
@@ -939,6 +958,7 @@ button {
 }
 
 .logo-footer {
+  font-family: var(--secondary-font);
   display: block;
   width: 100%;
   color: var(--web-color);
@@ -1038,6 +1058,7 @@ button {
   border-radius: 4px;
   padding: 8px 24px;
   transition: background-color var(--transition);
+  border: none;
 }
 .subscribe-button:hover,
 .subscribe-button:focus {
@@ -1114,5 +1135,97 @@ button {
     margin-right: 24px;
   }
   .subscribe-button {
+  }
+}
+
+/* --================================PORTFOLIO=============================-- */
+.portfolio-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.page-nav {
+  max-width: 263px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+}
+.portfolio-button {
+  padding: 8px 16px;
+  color: var(--web-color);
+  background-color: var(--primary-color-in-dark-them);
+  border: 1px solid var(--footer-text);
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: background-color var(--transition), color var(--transition);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-card-list {
+  width: 100%;
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  margin-bottom: 48px;
+}
+.overlay-conteiner > img {
+  max-height: 280px;
+}
+.overlay {
+  display: none;
+}
+.portfolio-card-description {
+  padding: 32px 16px;
+}
+.paragraph {
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* =====Tablet=====*/
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .page-nav {
+    max-width: 100%;
+    justify-content: center;
+  }
+  .card-list:not(:nth-of-type(2n)) {
+    column-gap: 24px;
+  }
+  .portfolio-card-list {
+    max-width: 352px;
+    flex-basis: calc(100% / 2 - 24px);
+    margin-bottom: 72px;
+  }
+  /* .portfolio-card-list:not(:nth-child(2)) {
+    margin-right: 24px;
+  /* } */
+}
+
+/* =====Desctop=====*/
+@media screen and (min-width: 1158px) {
+  .portfolio-card-list {
+    max-width: 360px;
+    flex-basis: calc(100% / 3 - 24px);
+    margin-bottom: 48px;
+  }
+  .portfolio-button {
+    padding: 12px 24px;
+  }
+  .card-list {
+  }
+  .card-list:nth-child(3) {
   }
 }
