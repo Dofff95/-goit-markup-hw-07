@@ -754,6 +754,7 @@ button {
     margin-bottom: 0;
   }
   .advantages-title {
+    font-weight: 500;
     margin-top: 8px;
     font-size: 20px;
     line-height: 1.2;
