@@ -717,12 +717,8 @@ button {
     gap: 72px 24px;
   }
   .advantages-item {
-    flex-basis: calc(100% / 2 - 24px);
-    /* margin-bottom: 72px; */
+    flex-basis: calc((100% - 24px) / 2);
   }
-  /* .advantages-item:not(:nth-child(2n)) {
-    margin-right: var(--card-set-gap);
-  } */
 
   .advantages-title {
     text-align: left;
@@ -743,7 +739,7 @@ button {
     flex-wrap: nowrap;
   }
   .advantages-item {
-    flex-basis: calc(100% / 4 - 72px);
+    flex-basis: calc((100% - 72px) / 4);
   }
   .advantages-icon {
     display: flex;
@@ -751,16 +747,16 @@ button {
     align-items: center;
     background-color: var(--primary-color-in-dark-them);
     border-radius: 4px;
-    padding: 24px 100px;
+    width: 264px;
+    height: 112px;
   }
-  /* .advantages-item:not(:nth-child(4n)) {
-    margin-right: var(--card-set-gap);
-  } */
   .advantages-item:not(:last-child) {
     margin-bottom: 0;
   }
   .advantages-title {
     margin-top: 8px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -795,6 +791,7 @@ button {
     margin-right: var(--card-set-gap);
   }
   .what-title {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     margin-bottom: 72px;
@@ -826,10 +823,12 @@ button {
   margin-left: auto;
 }
 .team-card {
-  margin-bottom: 72px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+.team-card:not(:last-child) {
+  margin-bottom: 72px;
 }
 .comment-team-card {
   background-color: var(--white-color);
