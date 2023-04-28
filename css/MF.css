@@ -822,14 +822,15 @@ button {
   margin-right: auto;
   margin-left: auto;
 }
+.team-card:not(:last-child) {
+  margin-bottom: 72px;
+}
 .team-card {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-card:not(:last-child) {
-  margin-bottom: 72px;
-}
+
 .comment-team-card {
   background-color: var(--white-color);
   text-align: center;
@@ -873,6 +874,9 @@ button {
     gap: 64px 24px;
   }
   .team-card {
+    margin-bottom: 0;
+  }
+  .team-card:not(:last-child) {
     margin-bottom: 0;
   }
 }
