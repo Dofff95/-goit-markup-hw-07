@@ -1241,4 +1241,34 @@ button {
   }
   .card-list:nth-child(3) {
   }
+  .overlay-conteiner {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio-card-link {
+    display: block;
+    transition: box-shadow var(--transition);
+  }
+  .portfolio-card-link:hover,
+  .portfolio-card-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .portfolio-card-link:hover .overlay,
+  .portfolio-card-link:focus .overlay {
+    transform: translate(0, 0);
+  }
+  .overlay {
+    background-color: var(--web-color);
+    color: var(--primary-color-in-dark-them);
+    line-height: 1.5;
+    padding: 40px 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 100%);
+    transition: transform var(--transition);
+  }
 }
