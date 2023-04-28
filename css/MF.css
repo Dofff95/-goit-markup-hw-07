@@ -1148,12 +1148,17 @@ button {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.portfolio-header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .page-nav {
   max-width: 263px;
   margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
+  gap: 16px 24px;
 }
 .portfolio-button {
   padding: 8px 16px;
@@ -1173,13 +1178,13 @@ button {
 .card-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px;
 }
 .portfolio-card-list {
   width: 100%;
   border: 1px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  margin-bottom: 48px;
 }
 .overlay-conteiner > img {
   max-height: 280px;
@@ -1205,14 +1210,14 @@ button {
   .page-nav {
     max-width: 100%;
     justify-content: center;
+    gap: 24px;
   }
-  .card-list:not(:nth-of-type(2n)) {
-    column-gap: 24px;
+  .card-list {
+    gap: 72px 24px;
   }
   .portfolio-card-list {
     max-width: 352px;
-    flex-basis: calc(100% / 2 - 24px);
-    margin-bottom: 72px;
+    flex-basis: calc((100% - 24px) / 2);
   }
   /* .portfolio-card-list:not(:nth-child(2)) {
     margin-right: 24px;
@@ -1223,13 +1228,13 @@ button {
 @media screen and (min-width: 1158px) {
   .portfolio-card-list {
     max-width: 360px;
-    flex-basis: calc(100% / 3 - 24px);
-    margin-bottom: 48px;
+    flex-basis: calc((100% - 48px) / 3);
   }
   .portfolio-button {
     padding: 12px 24px;
   }
   .card-list {
+    gap: 48px 24px;
   }
   .card-list:nth-child(3) {
   }
